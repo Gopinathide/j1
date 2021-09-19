@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            function add()
+            {
+                one=parseInt(document.getElementById("ones").value);
+                two=parseInt(document.getElementById("twos").value);
+                sum=one+two;
+                document.getElementById("answer").innerHTML=sum;
+            } 
+            </script>
+            </head>
+            <body>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">First Number</label>
+                        <input type="email" class="form-control" id="ones" aria-describedby="emailHelp" style="width: 1000px;">
+                        </div>
+                        <div>
+                        <label for="exampleInputEmail1" class="form-label">First Number</label>
+                        <input type="email" class="form-control" id="twos" aria-describedby="emailHelp" style="width: 1000px;">
+                      </div>
+                </form>
+                <button onclick="add()">add</button>
+                <p id="answer"></p>
+            </body>
+</html>
